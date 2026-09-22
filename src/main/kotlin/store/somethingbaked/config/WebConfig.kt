@@ -11,6 +11,7 @@ class WebConfig : WebMvcConfigurer {
         registry.addMapping("/**")
             .allowedOrigins(
                 "https://bakerywebsitefrontend-production.up.railway.app/",
+                "https://somethingbaked.store",
                 "http://localhost:4200"
             )
             .allowedMethods("*")
