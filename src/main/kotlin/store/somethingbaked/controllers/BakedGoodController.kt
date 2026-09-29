@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping
 import store.somethingbaked.entities.BakedGoodData
 import store.somethingbaked.services.BakedGoodService
 
-@RestController("/baked-good")
+@RestController("/")
 class BakedGoodController(
     private val bakedGoodService: BakedGoodService
 ) {
-    @GetMapping("/")
+    @GetMapping("/baked-good")
     fun getAllBakedGoods(): List<BakedGoodData> {
         return bakedGoodService.getAllBakedGoods();
     }
