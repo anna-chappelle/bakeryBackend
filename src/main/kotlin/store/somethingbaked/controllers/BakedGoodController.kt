@@ -6,7 +6,7 @@ import store.somethingbaked.entities.BakedGoodData
 import store.somethingbaked.services.BakedGoodService
 
 @RestController("/baked-good")
-class MyController(
+class BakedGoodController(
     private val bakedGoodService: BakedGoodService
 ) {
     @GetMapping("/")
