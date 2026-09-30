@@ -4,7 +4,7 @@ import jakarta.persistence.Entity
 import jakarta.persistence.Id
 import jakarta.persistence.GeneratedValue
 
-@Entity()
+@Entity(name = "Baked_Good")
 class BakedGood(
     @Id
     @GeneratedValue
