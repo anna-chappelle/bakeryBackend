@@ -4,6 +4,7 @@ import jakarta.persistence.Entity
 import jakarta.persistence.Id
 import jakarta.persistence.GeneratedValue
 import java.time.DateTimeException
+import java.time.LocalDate
 import java.time.LocalDateTime
 
 @Entity(name = "orders")
@@ -14,7 +15,7 @@ class Orders(
     var customerEmail: String,
     var receptionType: String,
     var orderStatus: String,
-    var timeCreated: LocalDateTime,
+    var timeCreated: LocalDate,
 ) {
     fun createOrderData(): OrdersData {
         return OrdersData(
@@ -44,5 +45,5 @@ data class OrdersData(
     val customerEmail: String,
     val receptionType: String,
     val orderStatus: String,
-    val timeCreated: LocalDateTime,
+    val timeCreated: LocalDate,
 )
