@@ -18,4 +18,14 @@ class BakedGoodService(
             .findAll()
             .map(BakedGood::createBakedGoodData)
     }
+
+    /**
+     * Gets all available baked goods
+     * @return list of all available baked goods in the db
+     */
+    fun getAllAvailableBakedGoods(): List<BakedGoodData> {
+        return bakedGoodRepository
+            .findAllByIsAvailable(true)
+            .map(BakedGood::createBakedGoodData)
+    }
 }

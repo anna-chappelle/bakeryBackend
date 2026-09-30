@@ -16,6 +16,9 @@ class Orders(
     var receptionType: String,
     var orderStatus: String,
     var timeCreated: LocalDate,
+    var firstName: String,
+    var lastName: String,
+    var phoneNumber: String,
 ) {
     fun createOrderData(): OrdersData {
         return OrdersData(
@@ -24,6 +27,9 @@ class Orders(
             receptionType = receptionType,
             orderStatus = orderStatus,
             timeCreated = timeCreated,
+            firstName = firstName,
+            lastName = lastName,
+            phoneNumber = phoneNumber,
         )
     }
 
@@ -35,6 +41,9 @@ class Orders(
                 receptionType = data.receptionType,
                 orderStatus = data.orderStatus,
                 timeCreated = data.timeCreated,
+                firstName = data.firstName,
+                lastName = data.lastName,
+                phoneNumber = data.phoneNumber,
             )
         }
     }
@@ -46,4 +55,7 @@ data class OrdersData(
     val receptionType: String,
     val orderStatus: String,
     val timeCreated: LocalDate,
+    var firstName: String,
+    var lastName: String,
+    var phoneNumber: String,
 )
