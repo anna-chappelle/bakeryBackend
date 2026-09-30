@@ -10,3 +10,6 @@ kls_database.db
 
 # env
 .env
+
+# Idea projects
+.idea/

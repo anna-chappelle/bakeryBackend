@@ -6,7 +6,7 @@ import jakarta.persistence.GeneratedValue
 import java.time.DateTimeException
 import java.time.LocalDateTime
 
-@Entity(name = "order_items")
+@Entity(name = "order_item")
 class OrderItems(
     @Id
     @GeneratedValue
